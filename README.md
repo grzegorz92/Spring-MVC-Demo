@@ -1,8 +1,6 @@
 # Spring-MVC-Demo
 Web app created with Spring MVC
 
-Web app created with Spring MVC
-
 Web app of non-existing "University of Science". User can choose one of the four different subpages:
 
 - About University - subpage where user can read history about university. Here request handling by Controller class is demonstrated.
