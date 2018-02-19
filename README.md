@@ -1,4 +1,4 @@
-# University of Science Project
+# University of Science Web App
 
 Web app created with Spring MVC and Hibernate Frameworks.
 
