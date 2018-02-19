@@ -1,8 +1,6 @@
 # University of Science Web App
 
-Web app created with Spring MVC and Hibernate Frameworks.
-
-Web app of non-existing "University of Science". User can choose one of the four different subpages:
+Web app, created with Spring MVC and Hibernate Frameworks, of non-existing "University of Science". User can choose one of the four different subpages:
 
 - About University - subpage where user can read history about university. Here request handling by Controller class is demonstrated.
 
