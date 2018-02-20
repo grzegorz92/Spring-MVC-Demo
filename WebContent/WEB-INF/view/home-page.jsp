@@ -31,10 +31,10 @@
 </div>
 
 <br>
-<a href="about" class="button">About University</a>   <!-- "about" -> host/university/about; "/about" -> host/about -->
-<a href="timetables/main" class="button">Classes Timetables</a>
-<a href="recordbook/main" class="button">Student Record Book</a>
-<a href="newstudent/main" class="button">New Student</a>
+<a href="./about" class="button">About University</a>   <!-- "about" -> host/university/about; "/about" -> host/about -->
+<a href="./timetables/main" class="button">Classes Timetables</a>
+<a href="./recordbook/main" class="button">Student Record Book</a>
+<a href="./newstudent/main" class="button">New Student</a>
 <br><br>
 
 

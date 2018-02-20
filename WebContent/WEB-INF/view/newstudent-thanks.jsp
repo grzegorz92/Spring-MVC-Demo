@@ -15,14 +15,14 @@
 
 
 <div class="content">
-<a href="/university"> <img src="${pageContext.request.contextPath}/resources/images/logo.png" width="127" height="102"  /></a>
+<a href="../"> <img src="${pageContext.request.contextPath}/resources/images/logo.png" width="127" height="102"  /></a>
 <br>
 <h2>University of Science</h2>
 </div>
 <br>
-<a href="/university/about" class="button">About University</a>  
-<a href="/university/timetables/main" class="button">Classes Timetables</a>
-<a href="/university/recordbook/main" class="button">Student Record Book</a>
+<a href="../about" class="button">About University</a>  
+<a href="../timetables/main" class="button">Classes Timetables</a>
+<a href="../recordbook/main" class="button">Student Record Book</a>
 <a href="main" class="button">New Student</a>
 <br><br>
 
@@ -57,7 +57,7 @@ United States</b><br>
 <h1>We are waiting for you!</h1><br><br><br><hr>
 
 
-<a href="/university"><input type="submit" value="HOME"/></a>
+<a href="../"><input type="submit" value="HOME"/></a>
 
 </div>
 

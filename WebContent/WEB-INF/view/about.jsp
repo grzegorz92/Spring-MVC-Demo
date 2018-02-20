@@ -15,15 +15,15 @@
 
 
 <div class="content">
-<a href="/university"> <img src="${pageContext.request.contextPath}/resources/images/logo.png" width="127" height="102"  /></a>
+<a href="./"> <img src="${pageContext.request.contextPath}/resources/images/logo.png" width="127" height="102"  /></a>
 <br>
 <h2>University of Science</h2>
 </div>
 <br>
 <div class="button2">About University</div>   
-<a href="timetables/main" class="button">Classes Timetables</a>
-<a href="recordbook/main" class="button">Student Record Book</a>
-<a href="newstudent/main" class="button">New Student</a>
+<a href="./timetables/main" class="button">Classes Timetables</a>
+<a href="./recordbook/main" class="button">Student Record Book</a>
+<a href="./newstudent/main" class="button">New Student</a>
 <br><br>
 
 
