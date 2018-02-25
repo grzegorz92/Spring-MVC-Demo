@@ -68,16 +68,16 @@
 <td>Date of birth:</td>
 
 <td>	
-	<form:input type="date" path="date"/>
-	<form:errors path="date" cssClass="error"/>
+	<form:input type="date" path="birthDate"/>
+	<form:errors path="birthDate" cssClass="error"/>
 </td>
 </tr>
 
 <tr>
 <td>Place of birth:</td>
 <td>	
-	<form:input path="placeOfBirth" placeholder="City, Country"/>
-	<form:errors path="placeOfBirth" cssClass="error"/>
+	<form:input path="birthPlace" placeholder="City, Country"/>
+	<form:errors path="birthPlace" cssClass="error"/>
 </td>
 </tr>
 
@@ -98,8 +98,8 @@
 <tr>
 <td>Street:</td>
 <td>
-	<form:input path="street" placeholder="Street name" />
-	<form:errors path="street" cssClass="error"/>
+	<form:input path="streetName" placeholder="Street name" />
+	<form:errors path="streetName" cssClass="error"/>
 </td>
 </tr>
 
@@ -133,8 +133,10 @@
 <tr>
 <td>Country:</td>
 <td><form:select path="country">
-	<form:options items="${newStudent.countryList}"/>
-	</form:select></td>
+<form:option value="US" label="USA"/> 
+<form:option value="DE" label="Germany"/>
+<form:option value="PL" label="Poland"/>
+</form:select></td>
 </tr>
 
 </table>
@@ -154,15 +156,9 @@
 				</form:select></td>
 </tr>
 
-<tr>
-<td>What languages are you interested to learn?:</td>
-<td><form:checkbox path="languages" value="English"/>English<br>
-	<form:checkbox path="languages" value="German"/>German<br>
-	<form:checkbox path="languages" value="French"/>French<br>
-	<form:checkbox path="languages" value="Polish"/>Polish<br>
-	
-</td>
-</tr>
+
+<!-- languages HERE -->
+
 </table>
 <br><br><br>	
 	
