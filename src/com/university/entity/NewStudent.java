@@ -87,9 +87,9 @@ public class NewStudent {
 	private String streetName;
 	
 	@Column(name="house_number")
-	//@Pattern(regexp="[0-9]+", message="Invalid number")
-	//@NotNull(message="Required!")	
-	private int houseNumber;
+	@Pattern(regexp="[0-9]+", message="Invalid number")
+	@NotNull(message="Required!")	
+	private String houseNumber;
 	
 	@Column(name="postal_code")
 	@NotNull(message="Required!")
@@ -173,11 +173,11 @@ public class NewStudent {
 		this.streetName = streetName;
 	}
 
-	public int getHouseNumber() {
+	public String getHouseNumber() {
 		return houseNumber;
 	}
 
-	public void setHouseNumber(int houseNumber) {
+	public void setHouseNumber(String houseNumber) {
 		this.houseNumber = houseNumber;
 	}
 
