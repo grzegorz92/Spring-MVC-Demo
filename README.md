@@ -8,7 +8,7 @@ Web app, created with Spring MVC and Hibernate Frameworks, of non-existing "Univ
 
 - Student Record Book - this subpage is under construction. Here will be possible to check student scores report and other data in Record book. Student scores will be stored in database and Hibernate Framework will be used to get all needed data with his unique student ID (Primary Key in database).
 
-- New Student - here candidates can reqister if they want to be a new students. Spring MVC form with @ModelAttribute and @Validation annotations is presented.
+- New Student - here candidates can reqister if they want to be a new students. Spring MVC form with @ModelAttribute and @Validation annotations is presented. Registered new students are being added to database.
 
 
 
