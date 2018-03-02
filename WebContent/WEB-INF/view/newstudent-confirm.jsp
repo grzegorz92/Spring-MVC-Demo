@@ -60,13 +60,13 @@ Check if the following informations are correct. If so click "submit" button to 
 <tr>
 <td>Date of birth:</td>
 
-<td>${newStudent.date}
+<td>${newStudent.birthDate}
 </td>
 </tr>
 
 <tr>
 <td>Place of birth:</td>
-<td>${newStudent.placeOfBirth}
+<td>${newStudent.birthPlace}
 </td>
 </tr>
 
@@ -83,7 +83,7 @@ Check if the following informations are correct. If so click "submit" button to 
 <table>
 <tr>
 <td>Address:</td>
-<td>${newStudent.street}, ${newStudent.houseNumber}</td>
+<td>${newStudent.streetName}, ${newStudent.houseNumber}</td>
 </tr>
 
 
@@ -111,18 +111,7 @@ Check if the following informations are correct. If so click "submit" button to 
 <td>${newStudent.fieldOfStudy}</td>
 </tr>
 
-<tr>
-<td>Language(s) you want to learn:</td>
-<td>
-<ul>
-	<c:forEach var="temp" items="${newStudent.languages}">
-	
-	<li>${temp}</li>
-	
-	</c:forEach>
-</ul>
-</td>
-</tr>
+<!--  languages HERE  -->
 </table>
 
 
