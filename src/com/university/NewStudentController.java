@@ -4,6 +4,10 @@ package com.university;
 
 
 
+import java.util.LinkedHashMap;
+import java.util.Locale;
+import java.util.Map;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +24,24 @@ import com.university.entity.NewStudent;
 import com.university.service.NewService;
 
 
-
+class Countries{
+	
+	private Map<String, String> list = new LinkedHashMap<>();
+	private String[] locales = Locale.getISOCountries();
+	
+	
+	public Map<String,String> getCountriesList(){
+		
+		for(String elements: locales) {			 
+			Locale loc = new Locale("",elements);
+			list.put(loc.getCountry(), loc.getDisplayCountry());
+			 
+		 }
+		
+		
+		return list;
+	}
+}	
 
 
 @Controller
@@ -41,8 +62,11 @@ public class NewStudentController {
 	@RequestMapping("/form")
 	public String newStudentForm(Model theModel) {
 		
-		theModel.addAttribute("newStudent", new NewStudent());
+		Countries country = new Countries();
 		
+		
+		theModel.addAttribute("countryList",country.getCountriesList());
+		theModel.addAttribute("newStudent", new NewStudent());
 		
 		return "newstudent-appform";
 	}

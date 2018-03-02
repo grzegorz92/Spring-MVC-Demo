@@ -1,8 +1,5 @@
 package com.university.entity;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,38 +13,6 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name="new_students")
 public class NewStudent {
-	
-	
-	//Countries List - in JSP
-	/*
-		Map<String, String> countryList = new LinkedHashMap<>();
-		
-		public NewStudent() {
-			
-		countryList.put("PL", "Poland");
-		countryList.put("US", "United States");
-		countryList.put("UK", "United Kingdom");
-		countryList.put("DE", "Germany");
-		countryList.put("ES", "Spain");
-		countryList.put("IT", "Italy");
-		countryList.put("HU", "Hungary");
-		countryList.put("CZ", "Czechia");
-		countryList.put("RU", "Russia");
-		countryList.put("CA", "Canada");
-		countryList.put("IR", "Irland");
-		countryList.put("FR", "France");
-		countryList.put("", "Other");
-		
-		}
-		
-		public Map<String,String> getCountryList() {
-			
-			return countryList;
-		}
-	
-	*/
-	
-	
 	
 	
 	@Id
@@ -101,6 +66,7 @@ public class NewStudent {
 	@Pattern(regexp="[A-Za-z\\s]+", message="Invalid city name")
 	private String city;
 	
+	@NotNull(message="Select the country!")
 	@Column(name="country")
 	private String country;
 	

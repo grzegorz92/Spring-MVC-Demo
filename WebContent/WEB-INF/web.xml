@@ -5,8 +5,8 @@
 	id="WebApp_ID" version="3.1">
 
 	<display-name>university</display-name>
-	
-	
+
+
 	<!-- Spring MVC Configs -->
 
 	<!-- Configure Spring MVC Dispatcher Servlet -->
@@ -25,5 +25,5 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
-	</web-app>
+
+</web-app>
