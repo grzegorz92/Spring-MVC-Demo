@@ -133,10 +133,11 @@
 <tr>
 <td>Country:</td>
 <td><form:select path="country">
-<form:option value="US" label="USA"/> 
-<form:option value="DE" label="Germany"/>
-<form:option value="PL" label="Poland"/>
-</form:select></td>
+<form:option value="" label="SELECT"/> 
+<form:options items="${countryList}" />
+</form:select>
+<form:errors path="country" cssClass="error"/> 
+</td>
 </tr>
 
 </table>
